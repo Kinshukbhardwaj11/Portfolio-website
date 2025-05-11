@@ -109,10 +109,10 @@ document.addEventListener('DOMContentLoaded', function() {
   dots.forEach(dot => dot.addEventListener('mouseenter', stopAutoScroll));
   
   // Resume auto-scroll when user stops interacting
-  projectCarousel.addEventListener('mouseleave', startAutoScroll);
-  prevButton.addEventListener('mouseleave', startAutoScroll);
-  nextButton.addEventListener('mouseleave', startAutoScroll);
-  dots.forEach(dot => dot.addEventListener('mouseleave', startAutoScroll));
+  // projectCarousel.addEventListener('mouseleave', startAutoScroll);
+  // prevButton.addEventListener('mouseleave', startAutoScroll);
+  // nextButton.addEventListener('mouseleave', startAutoScroll);
+  // dots.forEach(dot => dot.addEventListener('mouseleave', startAutoScroll));
   
   // Detect which card is most visible and update dots
   const observer = new IntersectionObserver((entries) => {
